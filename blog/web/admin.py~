@@ -1,0 +1,3 @@
+from django.contrib.admin import *
+from web.models import *
+django.contrib.admin.register(Entry)

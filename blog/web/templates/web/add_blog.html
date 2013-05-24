@@ -1,0 +1,13 @@
+<html>
+	<head>
+		<title> Add Blog </title>
+	</head>
+	<body>
+		<form method="post" action="{% url add_blog %}">
+			{% csrf_token %}
+			Title: <input type="text" name="title" /></br>
+			Content: <textarea name="content"></textarea></br>
+			<input type="submit" value="save" />
+		</form>
+	</body>
+</html>
